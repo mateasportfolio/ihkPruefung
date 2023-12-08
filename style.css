@@ -2,15 +2,41 @@
 primary: 18273E
 secondary: F69800
 */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+.container {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
 
 .header {
+  display: flex;
   height: 64px;
   box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.nav ul {
+  display: flex;
+  height: 100%;
+  gap: 16px;
+  list-style: none;
+  margin: 0;
+  margin-left: auto;
+}
+
+.nav ul li {
+  display: grid;
+  place-items: center;
+  height: 100%;
+  cursor: pointer;
 }
 
 #slider {
