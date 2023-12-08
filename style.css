@@ -3,6 +3,15 @@
   src: url(./Lato/Lato-Regular.ttf);
 }
 
+@font-face {
+  font-family: lato-bold;
+  src: url(./Lato/Lato-Bold.ttf);
+}
+@font-face {
+  font-family: lato-thin;
+  src: url(./Lato/Lato-Thin.ttf);
+}
+
 :root {
   --primary-color: #18273e;
   --secondary-color: #f69800;
@@ -38,6 +47,7 @@ body {
     padding: 16px;
   }
 }
+
 @media (min-width: 992px) {
   .container {
     background: var(--primary-color);
@@ -131,10 +141,56 @@ section {
   border: 2px solid red;
   height: 60vh;
 }
+
+/* ERSTANFRAGE FORMULAR */
 #form {
-  border: 2px solid green;
-  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
 }
+
+.form-container {
+  padding: 16px;
+}
+
+#form h3 {
+  color: var(--primary-color);
+  font-family: lato-bold;
+  margin: 0 0 16px;
+  padding: 0;
+  font-size: 24px;
+}
+
+#form h4 {
+  color: var(--primary-color);
+  font-family: lato-bold;
+  margin: 0 0 16px;
+}
+
+#form p {
+  color: #666;
+  margin: 0 0 32px;
+  padding: 0;
+}
+#form .subtitle {
+  padding: 0px;
+  margin: 8px 0px;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin: 8px 0;
+  gap: 8px;
+}
+
+.form-group label {
+  color: var(--primary-color);
+  font-family: lato-bold;
+}
+.form-group input {
+  padding: 12px;
+}
+
 #faq {
   border: 2px solid purple;
   height: 60vh;

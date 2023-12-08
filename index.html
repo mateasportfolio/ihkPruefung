@@ -6,12 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SolarRegina Gmbh</title>
     <link rel="stylesheet" href="style.css" />
-    <style>
-      @font-face {
-        font-family: "lato";
-        src: url("./Lato/Lato-Regular.ttf");
-      }
-    </style>
   </head>
   <body>
     <div class="container">
@@ -49,7 +43,85 @@
       <!--  Unser Team -->
       <section id="team">Team</section>
       <!--  Erstanfrage Formular -->
-      <section id="form">Form</section>
+      <section id="form">
+        <div class="form-container">
+          <h3>Erstanfrage Formular</h3>
+          <p>
+            Erweitern Sie die Anlage für Heizzwecke. Wir sind Ihr Partner bei
+            der Suche nach der besten Kombination von Solarthermie und
+            Wärmepumpe.
+          </p>
+          <form action="" class="main-form">
+            <div class="form-group">
+              <label for="ausgestattet">Wie ist Ihr Haus ausgestattet?</label>
+              <input type="text" id="ausgestattet" />
+            </div>
+            <h4>Wie viel Fläche kommt für Solarkollektoren in Frage?</h4>
+            <div class="form-group">
+              <label for="masse">Genaue Maße (Angabe in m) </label>
+              <input type="number" id="masse" />
+            </div>
+            <div class="form-group">
+              <label for="breite">Breite × Höhe</label>
+              <input type="text" id="breite" />
+            </div>
+            <div class="form-group">
+              <label for="heizen">Wie heizen Sie bisher?</label>
+              <input type="text" id="heizen" />
+            </div>
+            <div class="form-group">
+              <label for="brennstoff">Welchen Brennstoff nutzen Sie?</label>
+              <input type="text" id="brennstoff" />
+            </div>
+            <div class="form-group">
+              <label for="heizkessels">Und welche Art des Heizkessels?</label>
+              <input type="text" id="heizkessels" />
+            </div>
+            <div class="form-group">
+              <label for="brauchwasser"
+                >Wie erwärmen Sie das Brauchwasser?</label
+              >
+              <input type="text" id="brauchwasser" />
+            </div>
+            <h4>Was soll Ihre Solarthermieanlage leisten?</h4>
+            <!--  Radiobutton -->
+            <h4>Weitere Informationen, die Sie uns mitteilen wollen</h4>
+            <p class="subtitle">Angaben zu Ihrer Person:</p>
+            <div class="form-group">
+              <label for="vorname">Vorname</label>
+              <input type="text" id="vorname" />
+            </div>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" />
+            </div>
+            <div class="form-group">
+              <label for="straße">Straße</label>
+              <input type="text" id="straße" />
+            </div>
+            <div class="form-group">
+              <label for="hausnummer">Hausnummer</label>
+              <input type="text" id="hausnummer" />
+            </div>
+            <div class="form-group">
+              <label for="plz">PLZ</label>
+              <input type="text" id="plz" />
+            </div>
+            <div class="form-group">
+              <label for="ort">Ort</label>
+              <input type="text" id="ort" />
+            </div>
+            <div class="form-group">
+              <label for="telefon">Telefon</label>
+              <input type="text" id="telefon" />
+            </div>
+            <div class="form-group">
+              <label for="e-mail">E-Mail-Adresse</label>
+              <input type="text" id="email" />
+            </div>
+          </form>
+        </div>
+      </section>
       <!--  FAQ -->
       <section id="faq">Faq</section>
       <!--  Footer -->
