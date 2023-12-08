@@ -56,6 +56,53 @@
               <label for="ausgestattet">Wie ist Ihr Haus ausgestattet?</label>
               <input type="text" id="ausgestattet" />
             </div>
+
+            <fieldset class="radio-group">
+              <legend>Welche Ausrichtung hat das Dach?</legend>
+              <label
+                ><input type="radio" name="ausrichtung" value="sud" />
+                Süd</label
+              >
+              <label
+                ><input type="radio" name="ausrichtung" value="sudost" />
+                Südost</label
+              >
+              <label
+                ><input type="radio" name="ausrichtung" value="sudwest" />
+                Südwest</label
+              >
+              <label
+                ><input type="radio" name="ausrichtung" value="ost" />
+                Ost</label
+              >
+              <label
+                ><input type="radio" name="ausrichtung" value="west" />
+                West</label
+              >
+              <label
+                ><input type="radio" name="ausrichtung" value="nord" />
+                Nord</label
+              >
+            </fieldset>
+
+            <fieldset class="radio-group">
+              <legend>
+                Wie groß ist die Dachneigung (0-Grad bei Flachdach)?
+              </legend>
+              <label
+                ><input type="radio" name="dachneigung" value="0" />0</label
+              >
+              <label
+                ><input type="radio" name="dachneigung" value="15" />15</label
+              >
+              <label
+                ><input type="radio" name="dachneigung" value="30" />30</label
+              >
+              <label
+                ><input type="radio" name="dachneigung" value="60" />60</label
+              >
+            </fieldset>
+
             <h4>Wie viel Fläche kommt für Solarkollektoren in Frage?</h4>
             <div class="form-group">
               <label for="masse">Genaue Maße (Angabe in m) </label>
@@ -83,8 +130,51 @@
               >
               <input type="text" id="brauchwasser" />
             </div>
-            <h4>Was soll Ihre Solarthermieanlage leisten?</h4>
-            <!--  Radiobutton -->
+            <fieldset class="radio-group">
+              <legend>Was soll Ihre Solarthermieanlage leisten?</legend>
+              <label
+                ><input
+                  type="radio"
+                  name="solarthermieanlage"
+                  value="warmwasserbereitung"
+                />Nur Warmwasserbereitung</label
+              >
+              <label
+                ><input
+                  type="radio"
+                  name="solarthermieanlage"
+                  value="heizungsunterstützung"
+                />Heizungsunterstützung</label
+              >
+              <label
+                ><input
+                  type="radio"
+                  name="solarthermieanlage"
+                  value="beides"
+                />Beides</label
+              >
+              <label
+                ><input
+                  type="radio"
+                  name="solarthermieanlage"
+                  value="geschirrspüler"
+                />Mit Anschluss Geschirrspüler
+              </label>
+              <label
+                ><input
+                  type="radio"
+                  name="solarthermieanlage"
+                  value="geschirrspüler"
+                />Mit Anschluss Waschmachine</label
+              >
+              <label
+                ><input
+                  type="radio"
+                  name="solarthermieanlage"
+                  value="beides"
+                />Beides</label
+              >
+            </fieldset>
             <h4>Weitere Informationen, die Sie uns mitteilen wollen</h4>
             <p class="subtitle">Angaben zu Ihrer Person:</p>
             <div class="form-group">

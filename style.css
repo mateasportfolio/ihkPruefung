@@ -172,15 +172,33 @@ section {
   margin: 0 0 32px;
   padding: 0;
 }
+
 #form .subtitle {
   padding: 0px;
   margin: 8px 0px;
 }
+
 .form-group {
   display: flex;
   flex-direction: column;
   margin: 8px 0;
   gap: 8px;
+}
+
+.radio-group {
+  border: 1px solid #666;
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
+
+.radio-group label {
+  color: #666;
+  font-family: lato;
+}
+
+.radio-group legend {
+  color: var(--primary-color);
+  font-family: lato-bold;
 }
 
 .form-group label {
