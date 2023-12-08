@@ -1,0 +1,39 @@
+/* 
+primary: 18273E
+secondary: F69800
+*/
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  height: 64px;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+#slider {
+  border: 2px solid blue;
+  height: 60vh;
+}
+#expertise {
+  border: 2px solid pink;
+  height: 60vh;
+}
+#team {
+  border: 2px solid red;
+  height: 60vh;
+}
+#form {
+  border: 2px solid green;
+  height: 60vh;
+}
+#faq {
+  border: 2px solid purple;
+  height: 60vh;
+}
+#footer {
+  border: 2px solid yellow;
+  height: 128px;
+}
