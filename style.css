@@ -1,32 +1,59 @@
-/* 
-primary: 18273E
-secondary: F69800
-*/
+@font-face {
+  font-family: lato;
+  src: url(./Lato/Lato-Regular.ttf);
+}
+
+:root {
+  --primary-color: #18273e;
+  --secondary-color: #f69800;
+  --primary-text: #ffffff;
+}
 html {
   scroll-behavior: smooth;
+  scroll-padding: 64px;
+  font-family: lato;
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 .container {
   display: flex;
   height: 100%;
+  width: 100%;
   flex-direction: column;
+  max-width: 1440px;
 }
 
 .header {
   display: flex;
   height: 64px;
   box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  width: 100vw;
+  position: sticky;
+  top: 0;
+}
+
+section {
+  width: 100%;
+}
+
+/* NAVIGATION */
+.nav {
+  background-color: var(--primary-color);
+  width: 100%;
 }
 
 .nav ul {
   display: flex;
-  height: 100%;
   gap: 16px;
+  height: 100%;
   list-style: none;
   margin: 0;
   margin-left: auto;
@@ -37,6 +64,15 @@ body {
   place-items: center;
   height: 100%;
   cursor: pointer;
+}
+
+.nav ul li:hover a {
+  color: var(--secondary-color);
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: var(--primary-text);
 }
 
 #slider {
