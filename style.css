@@ -172,9 +172,55 @@ section {
   color: var(--secondary-color);
 }
 
-#team {
-  border: 2px solid red;
-  height: 60vh;
+#team .team-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 32px;
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  #team .team-container {
+    flex-direction: row;
+    gap: 0;
+  }
+}
+
+.team-member-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+}
+
+.team-member {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: white;
+}
+
+.team-member h4 {
+  font-family: lato-bold;
+  margin: 16px 0 4px;
+  padding: 0;
+  font-size: 18px;
+}
+.team-member h5 {
+  font-family: lato-thin;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+.team-member img {
+  border-radius: 50%;
+  object-fit: cover;
+  height: 50vw;
+  width: 100%;
+  max-height: 240px;
+  max-width: 240px;
 }
 
 /* ERSTANFRAGE FORMULAR */
@@ -275,6 +321,36 @@ section {
 }
 
 #footer {
-  border: 2px solid yellow;
-  height: 128px;
+  background-color: var(--secondary-color);
+}
+
+#footer .wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  gap: 16px;
+}
+
+#footer .wrapper .footer-group {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+#footer .wrapper .footer-group h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+#footer .wrapper .footer-group h3 {
+  color: var(--primary-color);
+}
+
+@media (min-width: 992px) {
+  #footer .wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }

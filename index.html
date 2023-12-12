@@ -95,7 +95,49 @@
         </div>
       </section>
       <!--  Unser Team -->
-      <section id="team">Team</section>
+      <section id="team">
+        <div class="team-container">
+          <div class="team-member-row">
+            <div class="team-member">
+              <div class="team-member-border"></div>
+              <img
+                src="https://images.unsplash.com/photo-1522529599102-193c0d76b5b6?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzh8fHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500"
+                alt=""
+              />
+              <h4>Micheal Scott</h4>
+              <h5>CEO</h5>
+            </div>
+            <div class="team-member">
+              <img
+                src="https://images.unsplash.com/photo-1512663150964-d8f43c899f76?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTQ3fHxwZW9wbGV8ZW58MHx8MHx8&auto=format&fit=crop&w=500"
+                alt=""
+              />
+              <h4>Tim Behr</h4>
+              <h5>Progammierer</h5>
+            </div>
+          </div>
+          <div class="team-member-row">
+            <div class="team-member">
+              <div class="team-member-border"></div>
+              <img
+                src="https://images.unsplash.com/photo-1534083220759-4c3c00112ea0?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGNoaW5lc2UlMjB3b21lbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500"
+                alt=""
+              />
+              <h4>Sandra Müller</h4>
+              <h5>Marketing</h5>
+            </div>
+            <div class="team-member">
+              <img
+                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzB8fHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500"
+                alt=""
+              />
+              <h4>Natalie Zimmer</h4>
+              <h5>Designer</h5>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!--  Erstanfrage Formular -->
       <section id="form">
         <div class="form-container">
@@ -166,6 +208,12 @@
               <label for="breite">Breite × Höhe</label>
               <input type="text" id="breite" />
             </div>
+
+            <label for="baujahr" class="form-select-label">
+              Wann wurde das Haus gebaut?
+            </label>
+            <select id="baujahr"></select>
+
             <div class="form-group">
               <label for="heizen">Wie heizen Sie bisher?</label>
               <input type="text" id="heizen" />
@@ -227,6 +275,36 @@
                   name="solarthermieanlage"
                   value="beides"
                 />Beides</label
+              >
+            </fieldset>
+            <div class="form-group">
+              <label for="wohnflache"
+                >Wie viel Wohnfläche wollen Sie beheizen?
+              </label>
+              <input type="number" id="wohnflache" />
+            </div>
+
+            <label for="warmwasserverbrauch" class="form-select-label">
+              Wie groß ist Ihr täglicher Warmwasserverbrauch (Angabe in Liter)?
+            </label>
+
+            <select id="warmwasserverbrauch"></select>
+
+            <fieldset class="radio-group">
+              <legend>Welche Kollektoren bevorzugen Sie?</legend>
+              <label
+                ><input
+                  type="radio"
+                  name="kollektoren"
+                  value="flachkollektoren"
+                />Flachkollektoren</label
+              >
+              <label
+                ><input
+                  type="radio"
+                  name="kollektoren"
+                  value="roehrenkollektoren"
+                />Röhrenkollektoren</label
               >
             </fieldset>
             <h4>Weitere Informationen, die Sie uns mitteilen wollen</h4>
@@ -357,7 +435,32 @@
         </div>
       </section>
       <!--  Footer -->
-      <footer id="footer">Footer</footer>
+      <footer id="footer">
+        <div class="wrapper">
+          <div class="footer-group">
+            <h3>Kontakt</h3>
+            <p>SolarRegina GmbH</p>
+            <p>Einfriedinger Weg 2d</p>
+            <p>29614 Soltau</p>
+            <p>Tel: 05191/70070</p>
+            <p>Fax: 05191/7007-10</p>
+            <p>E-Mail: info@solarregina.de</p>
+          </div>
+          <div class="footer-group">
+            <h3>Impressum</h3>
+            <p>Einfriedinger Weg 2d</p>
+            <p>29614 Soltau</p>
+            <p>Geschäftsführer: Hans Hümme</p>
+            <p>Tel: 05191/70070</p>
+            <p>Registergericht Soltau, Handelsregister HRB 12345</p>
+            <p>Finanzamt Soltau, USt.ID: DE449944994</p>
+          </div>
+          <div class="footer-group">
+            <h3>Datenschutz</h3>
+            <p></p>
+          </div>
+        </div>
+      </footer>
       <script src="/main.js"></script>
     </div>
   </body>
