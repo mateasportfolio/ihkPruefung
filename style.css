@@ -129,11 +129,54 @@ section {
     border-radius: 24px;
   }
 }
+/* SLIDER */
 
 #slider {
-  border: 2px solid blue;
-  height: 60vh;
+  margin: 32px 0;
+  height: min-content;
+  border-radius: 8px;
 }
+
+.slider-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.slide {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.slide img {
+  border-radius: 8px;
+  height: 100%;
+  filter: brightness(60%);
+  object-fit: cover;
+  width: 100%;
+}
+
+.slide-text {
+  position: absolute;
+  bottom: 25%;
+  left: 32px;
+}
+
+.slide-text h2 {
+  font-family: lato-bold;
+  font-size: 32px;
+  color: var(--secondary-color);
+  margin: 0;
+  padding: 0;
+}
+
+.slide p {
+  color: #fff;
+  font-size: 24px;
+}
+
 /* EXPERTISE */
 #expertise {
   background-color: white;
@@ -172,12 +215,19 @@ section {
   color: var(--secondary-color);
 }
 
+#team h2 {
+  padding: 0 16px;
+  color: #fff;
+  font-family: lato-bold;
+}
+
 #team .team-container {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   gap: 32px;
   width: 100%;
+  padding: 0 0 16px;
 }
 
 @media (min-width: 992px) {
@@ -291,7 +341,8 @@ section {
 }
 
 #faq {
-  background-color: #fff;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 #faq .wrapper {
@@ -314,6 +365,8 @@ section {
 }
 
 #faq .text-group p {
+  color: #fff;
+
   font-size: 16px;
   font-family: lato;
   margin: 0;
