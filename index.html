@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SolarRegina Gmbh</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <div class="container">
@@ -38,46 +42,61 @@
       </section>
       <!-- Angebote Slider -->
       <section id="slider">
+        <!-- Slider Buttons -->
+        <div class="slider-buttons">
+          <div class="chevron-left hidden">&#8249;</div>
+          <div class="chevron-right">&#8250;</div>
+        </div>
         <div class="slider-container">
-          <div class="slide">
-            <img src="./assets/images/Bild_18.jpg" alt="" />
-            <div class="slide-text">
-              <h2>Beratung</h2>
-              <p>Wir suchen die beste Lösung für Ihr Haus.</p>
-            </div>
-          </div>
+          <ul class="slider-container__list">
+            <li class="slide current">
+              <img src="./assets/images/Bild_18.jpg" alt="" />
+              <div class="slide-text">
+                <h2>Beratung</h2>
+                <p>Wir suchen die beste Lösung für Ihr Haus.</p>
+              </div>
+            </li>
 
-          <div class="slide">
-            <img src="./assets/images/Bild_17.jpg" alt="" />
-            <div class="slide-text">
-              <h2>Planung</h2>
-              <p>Wir legen Ihnen ein umweltfreundliches Konzept vor.</p>
-            </div>
-          </div>
+            <li class="slide">
+              <img src="./assets/images/Bild_17.jpg" alt="" />
+              <div class="slide-text">
+                <h2>Planung</h2>
+                <p>Wir legen Ihnen ein umweltfreundliches Konzept vor.</p>
+              </div>
+            </li>
 
-          <div class="slide">
-            <img src="./assets/images/Bild_15.jpg" alt="" />
-            <div class="slide-text">
-              <h2>Ein- und Umbau</h2>
-              <p>Wir realisieren diese Planung.</p>
-            </div>
-          </div>
+            <li class="slide">
+              <img src="./assets/images/Bild_15.jpg" alt="" />
+              <div class="slide-text">
+                <h2>Ein- und Umbau</h2>
+                <p>Wir realisieren diese Planung.</p>
+              </div>
+            </li>
 
-          <div class="slide">
-            <img src="./assets/images/Bild_12.jpg" alt="" />
-            <div class="slide-text">
-              <h2>Wartung</h2>
-              <p>Wir sorgen für die dauerhafte Leistung.</p>
-            </div>
-          </div>
+            <li class="slide">
+              <img src="./assets/images/Bild_12.jpg" alt="" />
+              <div class="slide-text">
+                <h2>Wartung</h2>
+                <p>Wir sorgen für die dauerhafte Leistung.</p>
+              </div>
+            </li>
 
-          <div class="slide">
-            <img src="./assets/images/Bild_10.jpg" alt="" />
-            <div class="slide-text">
-              <h2>Reparatur</h2>
-              <p>Wir springen bei Ausfällen sofort ein.</p>
-            </div>
-          </div>
+            <li class="slide">
+              <img src="./assets/images/Bild_10.jpg" alt="" />
+              <div class="slide-text">
+                <h2>Reparatur</h2>
+                <p>Wir springen bei Ausfällen sofort ein.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- Slider Navigation -->
+        <div class="slider-nav">
+          <span class="current-dot"></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
       </section>
       <!--  Unsere Expertise -->
@@ -504,6 +523,7 @@
           </div>
         </div>
       </footer>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
       <script src="/main.js"></script>
     </div>
   </body>

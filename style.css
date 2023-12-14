@@ -78,6 +78,7 @@ section {
 
 .logo {
   position: absolute;
+  left: 16px;
   display: flex;
   height: 100px;
 }
@@ -92,7 +93,7 @@ section {
   list-style: none;
   margin: 0;
   margin-left: auto;
-  padding: 0 16px;
+  padding: 0 32px;
 }
 
 .nav ul li {
@@ -112,6 +113,8 @@ section {
 
 /* HERO SECTION */
 #hero {
+  align-items: center;
+  justify-content: center;
   display: flex;
   height: 80vh;
   position: relative;
@@ -121,7 +124,7 @@ section {
 #hero img {
   object-fit: cover;
   height: 100%;
-  width: 100%;
+  width: calc(100% - 32px);
 }
 
 @media (min-width: 576px) {
@@ -132,20 +135,81 @@ section {
 /* SLIDER */
 
 #slider {
-  margin: 32px 0;
-  height: min-content;
+  margin: 32px 16px;
+  height: 400px;
   border-radius: 8px;
+  width: calc(100% - 32px);
+  position: relative;
+  overflow: hidden;
 }
 
 .slider-container {
   height: 100%;
   width: 100%;
-  display: flex;
-  flex-direction: column;
+  position: absolute;
 }
 
-.slide {
+.slider-container__list {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
   position: relative;
+  transition: transform 400ms ease-in-out;
+}
+
+.slider-buttons .chevron-left {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  color: var(--secondary-color);
+  cursor: pointer;
+  z-index: 10;
+  font-size: 64px;
+}
+
+.slider-buttons .chevron-right {
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  transform: translateY(-50%);
+  color: var(--secondary-color);
+  cursor: pointer;
+  z-index: 10;
+  font-size: 64px;
+}
+
+.slider-nav {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 16px;
+  z-index: 10;
+
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+}
+
+.slider-nav span {
+  border-radius: 12px;
+  background-color: #fff;
+  width: 12px;
+  height: 12px;
+}
+
+.slider-nav .current-dot {
+  background-color: var(--secondary-color);
+}
+
+.hidden {
+  display: none;
+}
+
+/* LIST ITEMS */
+.slide {
+  position: absolute;
   height: 100%;
   width: 100%;
 }
@@ -160,7 +224,7 @@ section {
 
 .slide-text {
   position: absolute;
-  bottom: 25%;
+  bottom: 20%;
   left: 32px;
 }
 
