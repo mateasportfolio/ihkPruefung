@@ -63,7 +63,13 @@ body {
   top: 0;
   background-color: transparent;
 }
-
+.text-heading {
+  margin: 160px;
+  padding-left: 16px;
+  align-items: start;
+  position: re;
+  display: flex;
+}
 section {
   width: 100%;
 }
@@ -123,6 +129,7 @@ section {
 
 #hero img {
   object-fit: cover;
+  filter: brightness(90%);
   height: 100%;
   width: calc(100% - 32px);
 }
