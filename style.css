@@ -133,6 +133,9 @@ section {
   padding: 160px;
   display: flex;
 }
+.cover p {
+  position: absolute;
+}
 
 @media (min-width: 576px) {
   #hero img {
@@ -260,6 +263,11 @@ section {
   gap: 16px;
 }
 
+#expertise .skizze {
+  border: 2px solid red;
+  width: 450px; /* Breite des SVG anpassen */
+  height: 450px; /* Höhe des SVG anpassen */
+}
 .text-group {
   display: flex;
   flex-direction: column;
